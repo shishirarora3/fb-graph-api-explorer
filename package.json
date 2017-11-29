@@ -1,7 +1,8 @@
 {
-  "name": "react-giphysearch-clean",
+  "name": "fb-graph-api-explorer",
   "description": "This is the \"clean\" version  of the `GiphySearch` example React component .",
-  "version": "0.0.297",
+  "version": "0.0.295",
+  "homepage": "https://shishirarora3.github.io/fb-graph-api-explorer",
   "dependencies": {
     "styled-components": "2.1.2",
     "react-dom": "15.6.1",
@@ -9,12 +10,15 @@
     "prop-types": "15.5.10"
   },
   "devDependencies": {
+    "gh-pages": "^1.1.0",
     "react-scripts": "1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
